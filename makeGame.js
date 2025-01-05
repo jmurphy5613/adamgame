@@ -88,22 +88,28 @@ export function makeGame(k) {
       spawnGreenChip();
     });
 
+    k.loadSound('death', '/roblox-death.mp3')
     //dead
     k.onCollide("cleatus", "redChip", (player, redChip) => {
       k.destroy(redChip);
       k.destroy(player);
+      k.play('death')
       k.go('gameOver', { score: score.value });
     });
 
     k.onCollide("cleatus", "blueChip", (player, blueChip) => {
       k.destroy(blueChip);
       k.destroy(player);
+      k.play('death')
+
       k.go('gameOver', { score: score.value });
     });
 
     k.onCollide("cleatus", "greenChip", (player, greenChip) => {
       k.destroy(greenChip);
       k.destroy(player);
+      k.play('death')
+
       k.go('gameOver', { score: score.value });
     });
 
