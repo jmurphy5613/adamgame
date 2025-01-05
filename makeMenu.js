@@ -1,3 +1,4 @@
+import { loadAssets } from "./assetLoader"
 export function makeMenu(k) {
     return k.scene("menu", () => {
      k.add([
@@ -52,6 +53,30 @@ export function makeMenu(k) {
 
 
     });
+
+    k.add([
+        k.sprite("cleatus"),
+        k.pos(200, k.center().y),
+        k.scale(8),
+    ]);
+
+    k.add([
+        k.sprite("blueChip"),
+        k.pos(200, 200),
+        k.scale(9),
+    ]);
+
+    k.add([
+        k.sprite("cleatus"),
+        k.pos(1000, k.center().y),
+        k.scale(8),
+    ]);
+
+    k.add([
+        k.sprite("redChip"),
+        k.pos(1000, 200),
+        k.scale(9),
+    ]);
 
     })
 };
