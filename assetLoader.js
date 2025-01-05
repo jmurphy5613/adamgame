@@ -1,5 +1,5 @@
 export function loadAssets(k) {
-    k.loadSpriteAtlas('/assets/poker-sheet.png', {
+    k.loadSpriteAtlas('/poker-sheet.png', {
         "cleatus": { 
             x: 0, 
             y: 16, 
