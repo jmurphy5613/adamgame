@@ -40,7 +40,7 @@ export function makeGame(k) {
       function spawnRedChip() {
         k.add([
           k.sprite("redChip"),
-          k.pos(k.rand(0, 1080), 0),
+          k.pos(k.rand(0, 1150), 0),
           k.scale(6),
           k.area(),
           k.body(),
@@ -54,7 +54,7 @@ export function makeGame(k) {
       function spawnBlueChip() {
         k.add([
           k.sprite("blueChip"),
-          k.pos(k.rand(0, 1080), 0),
+          k.pos(k.rand(0, 1150), 0),
           k.scale(6),
           k.area(),
           k.body(),
@@ -68,7 +68,7 @@ export function makeGame(k) {
       function spawnGreenChip() {
         k.add([
           k.sprite("greenChip"),
-          k.pos(k.rand(0, 1080), 0),
+          k.pos(k.rand(0, 1150), 0),
           k.scale(6),
           k.area(),
           k.body(),
